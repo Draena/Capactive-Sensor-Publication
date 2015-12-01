@@ -1,6 +1,9 @@
 \documentclass[11pt,twoside,a4paper]{article}
 \usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{float}
 \newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+\DeclareGraphicsExtensions{.pdf,.png}
 
 \begin{document}
 	\title{Carbon Nanotube Sensors for Synthetic Skin}
@@ -20,14 +23,49 @@
 		\subsection{something something something}
 	\newpage
 	\section{Method}
-		Device creation is split into subprocesses which are described in more detail below. The basic premise of the device creation is to produce a flexible substrate, deposit contacts 			onto this substrate, deposit the sensor material onto the substrate, repeat the process, cover one device with a deformable dielectric, sandwich the two layers together and 			finally encapsulate the device in a protective outer coating.
+		Device creation is split into subprocesses which are described in more detail below. The basic premise of the device creation is to produce a flexible substrate, deposit contacts 			onto this substrate, deposit the sensor material onto the substrate, repeat the process, cover one device with a deformable dielectric, sandwich the two layers together and 			finally encapsulate the device in a protective outer coating. 
+		\newline
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=.8]{ProcessDiagram}
+			\caption{The process for creating a capacitive sensor device}
+		\end{figure}
 		\subsection{Preparation}
+			\begin{enumerate}
+				\item Cut slides
+				\item Mix PDMS 10:1 base to curing agent ratio
+				\item Pour 12 ml PDMS into petri dish covered in slides
+				\item Leave to set
+				\item Cut individual slides away
+				\item Flip PDMS over to reveal smooth surface from glass slide
+			\end{enumerate}
 		\subsection{Evaporation}
+			\begin{enumerate}
+				\item Kapton tape samples to sample holder, leave 1-2 mm for contacts on either edge of the sample
+				\item Load samples into evaporate and pump down evaporator
+				\item Deposit 5 nm of Cr
+				\item Deposit 75 nm of Au
+				\item Contacts formed bring evaporator back to room pressure to remove samples
+			\end{enumerate}
 		\subsection{CNT Deposition}
+			\begin{enumerate}
+				\item Set Hotplate to $150^oC$
+				\item Mix a tiny concentration of CNTs (less than a pinch on the end of the spatula) with 10-12 ml NMP
+				\item Sonicate CNTs @ $40^oC$ for 2 hours
+				\item Load samples into sample holder on hotplate
+				\item Set Air Pressure on Airbrush to 2 Bar
+				\item Test AirBrush with some IPA
+				\item Spray CNT solution using the airbrush, wait for NMP to evaporate from the sample between sprays
+				\item Spray NMP:CNT solution and check conductivity of film once NMP has evaporated
+			\end{enumerate}
 		\subsection{Optional ILL}
+		
 		\subsection{Optional RIE}
+		
 		\subsection{Dielectric Layer}
+		
 		\subsection{Device Encapsulation}
+		
 	\newpage
 	\section{Results}
 		\begin{enumerate}
